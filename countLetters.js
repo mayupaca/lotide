@@ -1,10 +1,10 @@
-const assertEqual = function (actual, expected) {
-  if (actual !== expected) {
-    console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  } else if (actual === expected) {
-    console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-  }
-};
+// const assertEqual = function (actual, expected) {
+//   if (actual !== expected) {
+//     console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+//   } else if (actual === expected) {
+//     console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+//   }
+// };
 
 const countLetters = function (letters) {
   let object = {}
@@ -20,6 +20,6 @@ const countLetters = function (letters) {
  return object;
 }
 
-assertEqual(countLetters('LHL'), {L: 2, H: 1});
+// assertEqual(countLetters('LHL'), {L: 2, H: 1});
 
 
