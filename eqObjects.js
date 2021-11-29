@@ -44,6 +44,8 @@ const eqObjects = function (object1, object2) {
   return true;
 };
 
+module.exports = eqObjects;
+
 // const cd = { c: "1", d: ["2", 3] };
 // const dc = { d: ["2", 3], c: "1" };
 // assertArraysEqual(eqObjects(cd, dc), true); // => true
