@@ -1,23 +1,23 @@
+// const eqArrays = function (array1, array2) {
+//   if (array1.length !== array2.length) {
+//     return false;
+//   }
+//   for (let i = 0; i < array1.length; i++) {
+//     if (array1[i] !== array2[i]) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
 
-const eqArrays = function (array1, array2) {
-  if (array1.length !== array2.length) {
-    return false;
-  }
-  for (let i = 0; i < array1.length; i++) {
-    if (array1[i] !== array2[i]) {
-      return false;
-    }
-  }
-  return true;
-}
-
-const assertArraysEqual = function (array1, array2) {
-  if (eqArrays(array1, array2)) {
-    console.log(`✅✅✅ Assertion Passed: ${JSON.stringify(array1)} === ${JSON.stringify(array2)}`);
-  } else {
-    console.log(`🛑🛑🛑 Assertion Failed: ${JSON.stringify(array1)} !== ${JSON.stringify(array2)}`);
-  }
-}
+// const assertArraysEqual = function (array1, array2) {
+//   if (eqArrays(array1, array2)) {
+//     console.log(`✅✅✅ Assertion Passed: ${JSON.stringify(array1)} === ${JSON.stringify(array2)}`);
+//   } else {
+//     console.log(`🛑🛑🛑 Assertion Failed: ${JSON.stringify(array1)} !== ${JSON.stringify(array2)}`);
+//   }
+// }
+const assertArraysEqual = require("./assertArraysEqual");
 
 function middle(numbers) {
   if (numbers.length < 3) {
@@ -30,6 +30,8 @@ function middle(numbers) {
   }
   return [numbers[middleIndex]]
 }
+
+module.exports = middle;
 
 assertArraysEqual([], middle([1]))
 assertArraysEqual([], middle([1, 2])); // => []
